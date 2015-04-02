@@ -35,7 +35,7 @@ app.use (err, req, res, next) ->
 #         DB
 ######################
 
-mongoose.connect 'mongodb://localhost:27017/digit-bpce'
+mongoose.connect 'mongodb://localhost:27017/'
 db = mongoose.connection
 
 db.on 'error', ->
